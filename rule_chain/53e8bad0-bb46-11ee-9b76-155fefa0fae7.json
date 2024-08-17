@@ -1,0 +1,213 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "53e8bad0-bb46-11ee-9b76-155fefa0fae7"
+    },
+    "name" : "dummy",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 344,
+        "layoutY" : 95
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { batteryLevel: 42, criticalAlarmsCount: 1,majorAlarmsCount:0,motion:false };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "2df619c0-ba2a-11ee-9b76-155fefa0fae7",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "99054bb0-bb46-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "motion detector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 702,
+        "layoutY" : 108
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e4fa82d0-bb4e-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "Save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 384,
+        "layoutY" : 187
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { batteryLevel: 42, criticalAlarmsCount: 1,majorAlarmsCount:0,motion:false };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "45d517d0-ba2a-11ee-9b76-155fefa0fae7",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fec507c0-bb4f-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "motion detector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 365,
+        "layoutY" : 305
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { batteryLevel: 42, criticalAlarmsCount: 1,majorAlarmsCount:0,motion:false };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "5251a820-ba2a-11ee-9b76-155fefa0fae7",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fec555e0-bb4f-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "motion detector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 408,
+        "layoutY" : 426
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { batteryLevel: 42, criticalAlarmsCount: 1,majorAlarmsCount:0,motion:false };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "5b7b3ce0-ba2a-11ee-9b76-155fefa0fae7",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fec57cf0-bb4f-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "motion detector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 660,
+        "layoutY" : 489
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = { batteryLevel: 42, criticalAlarmsCount: 1,majorAlarmsCount:0,motion:false };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : null,
+        "originatorType" : null
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fec5a400-bb4f-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "motion detector",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f95bd500-aedb-11ee-9b76-155fefa0fae7"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "4f332d20-50a3-11ef-83a8-912a659b4106"
+    },
+    "label" : "Water leakage",
+    "name" : "leakage",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Water Level Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "ny5uVd14uRYh0vM8zjQh",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1722681031729,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1722681031729,
+      "longValue" : 1722681031728,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1722680389395,
+      "longValue" : 1722680387985,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 25.239628,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1722795269099,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 55.327826,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1722795281604,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

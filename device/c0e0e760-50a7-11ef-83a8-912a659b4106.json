@@ -1,0 +1,95 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f95bd500-aedb-11ee-9b76-155fefa0fae7"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c0e0e760-50a7-11ef-83a8-912a659b4106"
+    },
+    "label" : "Ultrasonic Sensor",
+    "name" : "ultrasonic",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Water Level Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "0091MAqE5yWhsPskVGbV",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1722680971728,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1722680971728,
+      "longValue" : 1722680971728,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1722680362414,
+      "longValue" : 1722680360023,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 25.239259,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1722795237445,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 55.3251441,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1722795249728,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "photo",
+      "lastUpdateTs" : 1722923962790,
+      "longValue" : null,
+      "strValue" : "data:image/jpeg;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"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

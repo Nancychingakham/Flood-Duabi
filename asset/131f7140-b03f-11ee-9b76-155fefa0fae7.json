@@ -1,0 +1,29 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "af523280-aed9-11ee-9b76-155fefa0fae7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "131f7140-b03f-11ee-9b76-155fefa0fae7"
+    },
+    "label" : null,
+    "name" : "Flood Detection",
+    "ownerId" : null,
+    "type" : "Dubai flood"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

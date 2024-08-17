@@ -1,0 +1,87 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b72adfa0-bb42-11ee-9b76-155fefa0fae7"
+    },
+    "name" : "dummy",
+    "root" : false,
+    "type" : "EDGE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 342,
+        "layoutY" : 158
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {\n             \ttemperature: (20 + 5 * Math.random()).toFixed(1)\n             };\n\n             return {\n             \tmsg: msg,\n             \tmetadata: {\n             \t\tdeviceType: \"indoor thermometer\"\n             \t},\n             \tmsgType: \"POST_TELEMETRY_REQUEST\"\n             };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "originatorId" : "2df619c0-ba2a-11ee-9b76-155fefa0fae7",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1b31b730-bb43-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "dev1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 776,
+        "layoutY" : 145
+      },
+      "configuration" : {
+        "ruleChainId" : "2ff62bc0-b9b7-11ee-9b76-155fefa0fae7"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "81845380-bb43-11ee-9b76-155fefa0fae7"
+      },
+      "name" : "ghg",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "4cf93130-af09-11ee-9b76-155fefa0fae7"
+    },
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "c60b92e0-94db-11ee-994f-696f2d05cc74"
+    },
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "af523280-aed9-11ee-9b76-155fefa0fae7"
+    },
+    "image" : null,
+    "name" : "Dubai flood"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

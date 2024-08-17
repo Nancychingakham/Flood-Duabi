@@ -1,0 +1,208 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "c60b92e0-94db-11ee-994f-696f2d05cc74"
+    },
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f95bd500-aedb-11ee-9b76-155fefa0fae7"
+    },
+    "image" : null,
+    "name" : "Water Level Sensor",
+    "profileData" : {
+      "alarms" : [ {
+        "alarmType" : "High Water Level",
+        "clearRule" : null,
+        "createRules" : {
+          "CRITICAL" : {
+            "alarmDetails" : "Danger",
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "speed",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "defaultValue" : 70.0,
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "NUMERIC"
+              } ],
+              "spec" : {
+                "type" : "SIMPLE"
+              }
+            },
+            "dashboardId" : {
+              "entityType" : "DASHBOARD",
+              "id" : "e5d646f0-af94-11ee-9b76-155fefa0fae7"
+            },
+            "schedule" : null
+          }
+        },
+        "id" : "3e44842d-abbc-ac82-b500-89f074068b56",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Warning",
+        "clearRule" : null,
+        "createRules" : {
+          "WARNING" : {
+            "alarmDetails" : "Warning",
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "speed",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "NUMERIC",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : 50.0,
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "NUMERIC"
+              } ],
+              "spec" : {
+                "type" : "SIMPLE"
+              }
+            },
+            "dashboardId" : {
+              "entityType" : "DASHBOARD",
+              "id" : "e5d646f0-af94-11ee-9b76-155fefa0fae7"
+            },
+            "schedule" : null
+          }
+        },
+        "id" : "ac122d7a-d578-e1cb-ed10-4cb55e719a4c",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Beware",
+        "clearRule" : null,
+        "createRules" : {
+          "INDETERMINATE" : {
+            "alarmDetails" : "Safe",
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "speed",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "defaultValue" : 45.0,
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "NUMERIC"
+              } ],
+              "spec" : {
+                "type" : "SIMPLE"
+              }
+            },
+            "dashboardId" : {
+              "entityType" : "DASHBOARD",
+              "id" : "e5d646f0-af94-11ee-9b76-155fefa0fae7"
+            },
+            "schedule" : null
+          }
+        },
+        "id" : "cf5eaaf3-11db-29a5-46de-a5099b5dbbc3",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Safe",
+        "clearRule" : null,
+        "createRules" : {
+          "MINOR" : {
+            "alarmDetails" : "Safe",
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "speed",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "defaultValue" : 30.0,
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "NUMERIC"
+              } ],
+              "spec" : {
+                "type" : "SIMPLE"
+              }
+            },
+            "dashboardId" : {
+              "entityType" : "DASHBOARD",
+              "id" : "e5d646f0-af94-11ee-9b76-155fefa0fae7"
+            },
+            "schedule" : null
+          }
+        },
+        "id" : "fe13b125-0b2c-6cbd-a48d-8a20ac0a5551",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false
+      } ],
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

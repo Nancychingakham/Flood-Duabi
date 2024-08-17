@@ -1,0 +1,25 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "4f6154f0-997b-11ee-8040-1596435fa4d8"
+    },
+    "description" : "Smart Irrigation Field",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "4ffbc030-997b-11ee-8040-1596435fa4d8"
+    },
+    "image" : null,
+    "name" : "SI Field"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

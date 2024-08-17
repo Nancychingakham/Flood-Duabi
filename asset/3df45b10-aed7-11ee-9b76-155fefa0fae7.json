@@ -1,0 +1,59 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "4ffbc030-997b-11ee-8040-1596435fa4d8"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "3df45b10-aed7-11ee-9b76-155fefa0fae7"
+    },
+    "label" : null,
+    "name" : "pod 1",
+    "ownerId" : null,
+    "type" : "SI Field"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cropType",
+      "lastUpdateTs" : 1704795229224,
+      "longValue" : null,
+      "strValue" : "wheat"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMoistureThreshold",
+      "lastUpdateTs" : 1704795229224,
+      "longValue" : 75,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMoistureThreshold",
+      "lastUpdateTs" : 1704795229224,
+      "longValue" : 25,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[25.065148534767285,55.13464192499741],[25.061032254061058,55.13694762659018],[25.0577666963502,55.13986589360439],[25.052868196624242,55.14269829583254],[25.046181039715517,55.14965054094435],[25.033505543942546,55.165958358640424],[25.049135874956377,55.18072126853309],[25.06453096931927,55.19436856176651],[25.068107330535266,55.19359586918167],[25.073782645952882,55.185784936865886],[25.079224482213693,55.17883297240348],[25.081556623713503,55.173425610177645],[25.085598897064777,55.17308232283278],[25.090962476755838,55.17651541267003],[25.09683105184432,55.18205160748401],[25.101455757042082,55.17986298394289],[25.103942921139936,55.17668722224036],[25.095470811157565,55.16647339129478],[25.085676631782473,55.15462872874465],[25.076659075252394,55.14458656179893]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1704795353087,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
